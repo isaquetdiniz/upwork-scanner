@@ -1,0 +1,26 @@
+{
+  "id": null,
+  "account": "bobbybackupy",
+  "employer": null,
+  "first_name": "Bobby",
+  "last_name": "Backupy",
+  "full_name": "Bobby Backupy",
+  "email": "b******nt@argyle.io",
+  "phone_number": "+1 9176987366",
+  "birth_date": null,
+  "picture_url": "",
+  "address": {
+    "line1": "Party street 100",
+    "line2": "1",
+    "city": "Miami, FL 123456",
+    "state": "Miami, FL 123456",
+    "postal_code": "Miami, FL 123456",
+    "country": "United States"
+  },
+  "ssn": null,
+  "marital_status": null,
+  "gender": null,
+  "metadata": null,
+  "created_at": null,
+  "updated_at": null
+}
