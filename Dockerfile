@@ -1,11 +1,23 @@
-FROM python:3.10-alpine3.16
+FROM python:3.10-slim as python-base
+
+ENV POETRY_HOME="/etc/poetry"
+
+RUN apt-get update \
+    && apt-get install --no-install-recommends -y \
+    curl \
+    build-essential \
+    chromium
+
+RUN curl -sSL https://install.python-poetry.org | POETRY_HOME=${POETRY_HOME} python3 -
 
 WORKDIR /app
 
-COPY requirements.txt requirements.txt
+COPY poetry.lock pyproject.toml ./
 
-RUN pip3 install -r requirements.txt
+ENV PATH="$POETRY_HOME/bin"
 
-COPY . .
+RUN poetry install --no-root
 
-CMD ["python3", "src/main.py"]
+FROM python-base as production
+COPY ./src ./src
+CMD ["poetry", "run", "python", "src/main.py"]

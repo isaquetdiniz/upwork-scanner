@@ -1,11 +1,13 @@
+import os
 from typing import Any
 
-from dotenv import dotenv_values
+from dotenv import load_dotenv
 
 
 class Env:
     def __init__(self):
-        self.config = dotenv_values(".env")
+        load_dotenv()
+        self.config = dict(os.environ)
 
     def load_informations(self,
                           dict: dict[str, dict[str, Any]]
