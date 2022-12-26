@@ -1,6 +1,7 @@
 from abc import ABC, abstractclassmethod
-from domain.entities.user import User
+
 from domain.entities.job import Job
+from domain.entities.user import User
 
 
 class JobRepository(ABC):

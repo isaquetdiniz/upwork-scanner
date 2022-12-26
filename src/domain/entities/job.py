@@ -1,5 +1,6 @@
 from domain.entities.client import Client
 
+
 class Job:
     def __init__(
         self,

@@ -1,18 +1,33 @@
 import re
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.core.utils import ChromeType
+
 from application.repos.job_repository import JobRepository
+from domain.entities.client import Client
 from domain.entities.job import Job
 from domain.entities.user import User
-from domain.entities.client import Client
+
 
 class SeleniumJobRepository(JobRepository):
-    def __init__(self, login_url: str, login_username_input_id: str, login_password_input_id: str, login_answer_input_id: str, login_six_digit_code_input_id: str, login_six_digit_code_otp_input_id: str, login_first_button_id: str, login_second_button_id: str, principal_page_url: str, best_matches_class: str, wait_element_seconds: int):
+    def __init__(self,
+                 login_url: str,
+                 login_username_input_id: str,
+                 login_password_input_id: str,
+                 login_answer_input_id: str,
+                 login_six_digit_code_input_id: str,
+                 login_six_digit_code_otp_input_id: str,
+                 login_first_button_id: str,
+                 login_second_button_id: str,
+                 principal_page_url: str,
+                 best_matches_class: str,
+                 wait_element_seconds: int
+                 ):
         self.login_url = login_url
         self.login_username_input_id = login_username_input_id
         self.login_password_input_id = login_password_input_id
@@ -110,12 +125,10 @@ class SeleniumJobRepository(JobRepository):
         email_input.clear()
         email_input.send_keys(user.email)
 
-
         login_first_continue_button = wait.until(
             EC.element_to_be_clickable((By.ID, self.login_first_button_id)))
 
         login_first_continue_button.click()
-
 
         password_input = wait.until(
             EC.element_to_be_clickable((By.ID, self.login_password_input_id)))
@@ -163,8 +176,10 @@ class SeleniumJobRepository(JobRepository):
                         best_matches_jobs: list[Job] = []
 
                         for best_match in best_matches:
-                            best_match_informations = best_match.get_attribute('innerText')
-                            job = self.transform_to_job(best_match_informations)
+                            best_match_informations = best_match.get_attribute(
+                                'innerText')
+                            job = self.transform_to_job(
+                                best_match_informations)
                             best_matches_jobs.append(job)
 
                         return best_matches_jobs
@@ -193,7 +208,8 @@ class SeleniumJobRepository(JobRepository):
                     best_matches_jobs: list[Job] = []
 
                     for best_match in best_matches:
-                        best_match_informations = best_match.get_attribute('innerText')
+                        best_match_informations = best_match.get_attribute(
+                            'innerText')
                         job = self.transform_to_job(best_match_informations)
                         best_matches_jobs.append(job)
 
@@ -201,11 +217,3 @@ class SeleniumJobRepository(JobRepository):
                 except Exception as error:
                     print('Login error')
                     print(error)
-
-
-
-
-
-
-
-

@@ -1,4 +1,5 @@
 import json
+
 from application.repos.job_repository import JobRepository
 from application.usecases.get_user_jobs_usecase import GetUserJobsUsecase
 from domain.entities.job import Job
@@ -20,13 +21,16 @@ class GetUserJobsController:
 
             jobs_dict.append(job_dict)
 
-        return json.dumps({"jobs": jobs_dict })
+        return json.dumps({"jobs": jobs_dict})
 
-
-    def execute(self, username: str, email: str, password: str, security_answer: str) -> str:
+    def execute(self,
+                username: str,
+                email: str,
+                password: str,
+                security_answer: str
+                ) -> str:
         user = User(username, email, password, security_answer)
 
         jobs = self.get_user_jobs_usecase.perform(user)
 
         return self.format_response(jobs)
-
