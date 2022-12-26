@@ -75,6 +75,8 @@ Technologies that was used to build this application
 ### Run
 The dockerfile image not it's working, so it's necessary have installed the python and the poetry.
 
+You need to add a .env file follow a .env.example.
+
 Now it's just enter in the project and run:
 
 ```python
