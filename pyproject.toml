@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "upwork-scanner"
+version = "0.1.0"
+description = ""
+authors = ["isaquetdiniz <itd@cin.ufpe.br>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "upwork_scanner"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "^4.7.2"
+webdriver-manager = "^3.8.5"
+python-dotenv = "^0.21.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

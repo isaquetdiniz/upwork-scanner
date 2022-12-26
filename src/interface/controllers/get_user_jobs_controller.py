@@ -10,17 +10,17 @@ class GetUserJobsController:
         self.get_user_jobs_usecase = GetUserJobsUsecase(job_repository)
 
 
-    def tranform_to_json(self, job: Job) -> str:
-        return json.dumps(job.__dict__)
+    def tranform_to_dict(self, job: Job) -> str:
+        return job.__dict__
 
     def format_response(self, jobs: list[Job]) -> str:
-        jobs_json = []
+        jobs_dict = []
 
         for job in jobs:
-            job_to_json = self.tranform_to_json(job)
-            jobs_json.append(job_to_json)
+            job_dict = job.__dict__
+            jobs_dict.append(job_dict)
 
-        return json.dumps({"jobs": jobs_json })
+        return json.dumps({"jobs": jobs_dict })
 
 
     def execute(self, username: str, email: str, password: str, security_answer: str) -> str:
