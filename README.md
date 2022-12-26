@@ -53,6 +53,7 @@
   - CI/CD with lint check
   - Unit tests
   - More resilient flow
+  - More login options
 </p>
 
 ## 🚀 Technologies
