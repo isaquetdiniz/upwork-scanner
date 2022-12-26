@@ -1,5 +1,5 @@
 from infra.selenium.selenium_job_repository import SeleniumJobRepository
-from infra.env.env import Env
+from infra.dotenv.env import Env
 from interface.controllers.get_user_jobs_controller import GetUserJobsController
 
 env = Env()

@@ -9,15 +9,15 @@ class GetUserJobsController:
     def __init__(self, job_repository: JobRepository):
         self.get_user_jobs_usecase = GetUserJobsUsecase(job_repository)
 
-
-    def tranform_to_dict(self, job: Job) -> str:
-        return job.__dict__
-
     def format_response(self, jobs: list[Job]) -> str:
         jobs_dict = []
 
         for job in jobs:
+            client_dict = job.client.__dict__
+            job.client = client_dict
+
             job_dict = job.__dict__
+
             jobs_dict.append(job_dict)
 
         return json.dumps({"jobs": jobs_dict })

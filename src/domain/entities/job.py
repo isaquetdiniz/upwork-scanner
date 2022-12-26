@@ -1,8 +1,18 @@
+from domain.entities.client import Client
+
 class Job:
-    def __init__(self, title: str, description: str, tags: str, rating: str, payment: str, country: str):
+    def __init__(
+        self,
+        title: str,
+        description: str,
+        tags: list[str],
+        level: str,
+        payment: str,
+        client: Client
+    ):
         self.title = title
         self.description = description
         self.tags = tags
-        self.rating = rating
+        self.level = level
         self.payment = payment
-        self.country = country
+        self.client = client
