@@ -39,6 +39,8 @@ class SeleniumJobRepository(JobRepository):
         self.principal_page_url = principal_page_url
         self.best_matches_class = best_matches_class
         self.wait_element_seconds = wait_element_seconds
+        self.driver = self.load_driver()
+        self.wait = self.load_wait(self.driver)
 
     def get_tags(self, list: list[str], length: int) -> list[str]:
         tags = []
@@ -106,7 +108,7 @@ class SeleniumJobRepository(JobRepository):
 
         return job
 
-    def get_by_user(self, user: User) -> list[Job]:
+    def load_driver(self):
         service = ChromeService(ChromeDriverManager(
             chrome_type=ChromeType.CHROMIUM).install())
 
@@ -115,105 +117,157 @@ class SeleniumJobRepository(JobRepository):
 
         driver = webdriver.Chrome(service=service, options=options)
 
+        return driver
+
+    def load_wait(self, driver):
         wait = WebDriverWait(driver, self.wait_element_seconds)
+        return wait
 
-        driver.get(self.login_url)
+    def open_page(self):
+        self.driver.get(self.login_url)
 
-        email_input = wait.until(EC.element_to_be_clickable(
+    def secret_anwser(self, input, user: User):
+        input.clear()
+        input.send_keys(user.security_answer)
+
+        login_third_continue_button = self.wait.until(
+            EC.element_to_be_clickable(
+                (
+                    By.ID,
+                    self.login_second_button_id
+                )
+            )
+        )
+
+        login_third_continue_button.click()
+
+    def login(self, user: User):
+        email_input = self.wait.until(EC.element_to_be_clickable(
             (By.ID, self.login_username_input_id)))
 
         email_input.clear()
         email_input.send_keys(user.email)
 
-        login_first_continue_button = wait.until(
+        login_first_continue_button = self.wait.until(
             EC.element_to_be_clickable((By.ID, self.login_first_button_id)))
 
         login_first_continue_button.click()
 
-        password_input = wait.until(
+        password_input = self.wait.until(
             EC.element_to_be_clickable((By.ID, self.login_password_input_id)))
 
         password_input.clear()
         password_input.send_keys(user.password)
 
-        login_second_continue_button = wait.until(
+        login_second_continue_button = self.wait.until(
             EC.element_to_be_clickable((By.ID, self.login_second_button_id)))
 
         login_second_continue_button.click()
 
+    def is_logged(self) -> bool:
         try:
-            answer_input = wait.until(
-                EC.element_to_be_clickable((By.ID, self.login_answer_input_id)))
+            self.wait.until(
+                EC.url_matches(
+                    self.principal_page_url
+                )
+            )
+        except Exception:
+            return False
+        else:
+            return True
 
-            if answer_input:
-                print('Need secret answer')
+    def need_secret_anwser(self):
+        try:
+            anwser_input = self.wait.until(
+                EC.element_to_be_clickable(
+                    (
+                        By.ID,
+                        self.login_answer_input_id
+                    )
+                )
+            )
 
-                answer_input.clear()
-                answer_input.send_keys(user.security_answer)
+        except Exception:
+            return False
+        else:
+            return anwser_input
 
-                login_third_continue_button = wait.until(
-                    EC.element_to_be_clickable((By.ID, self.login_second_button_id)))
+    def need_six_digit_code(self):
+        try:
+            need_six_digit_code_input = self.wait.until(
+                EC.element_to_be_clickable(
+                    (
+                        By.ID,
+                        self.login_six_digit_code_input_id
+                    )
+                )
+            )
 
-                login_third_continue_button.click()
+        except Exception:
+            return False
+        else:
+            return need_six_digit_code_input
 
-                try:
-                    need_six_digit_code = wait.until(EC.element_to_be_clickable(
-                        (By.ID, self.login_six_digit_code_input_id)))
+    def need_six_digit_otp_code(self):
+        try:
+            otp_input = self.wait.until(
+                EC.element_to_be_clickable(
+                    (
+                        By.ID,
+                        self.login_six_digit_code_otp_input_id
+                    )
+                )
+            )
+        except Exception:
+            return False
+        else:
+            return otp_input
 
-                    if need_six_digit_code:
-                        print('Need six digit verification code')
-                except:
-                    try:
-                        is_in_best_matches = wait.until(
-                            EC.url_matches(self.principal_page_url))
+    def get_best_matches_jobs(self) -> list[Job]:
+        best_matches = self.driver.find_elements(
+            By.CLASS_NAME,
+            self.best_matches_class
+        )
 
-                        if is_in_best_matches:
-                            print('Logged with success!')
+        best_matches_jobs: list[Job] = []
 
-                        best_matches = driver.find_elements(
-                            By.CLASS_NAME, self.best_matches_class)
+        for best_match in best_matches:
+            best_match_informations = best_match.get_attribute(
+                'innerText'
+            )
 
-                        best_matches_jobs: list[Job] = []
+            job = self.transform_to_job(
+                best_match_informations
+            )
 
-                        for best_match in best_matches:
-                            best_match_informations = best_match.get_attribute(
-                                'innerText')
-                            job = self.transform_to_job(
-                                best_match_informations)
-                            best_matches_jobs.append(job)
+            best_matches_jobs.append(job)
 
-                        return best_matches_jobs
-                    except:
-                        print('Login error')
-        except:
-            print('No need secret answer')
+        return best_matches_jobs
 
-            try:
-                otp_input = wait.until(EC.element_to_be_clickable(
-                    By.ID, self.login_six_digit_code_otp_input_id))
+    def get_by_user(self, user: User) -> list[Job]:
+        self.open_page()
+        self.login(user)
 
-                if otp_input:
-                    print('Need six digit otp verification code')
-            except:
-                try:
-                    is_in_best_matches = wait.until(
-                        EC.url_matches(self.principal_page_url))
+        if self.is_logged():
+            print('Logged with success!')
+            return self.get_best_matches_jobs()
 
-                    if is_in_best_matches:
-                        print('Logged with success!')
+        anwser_input = self.need_secret_anwser()
+        if anwser_input:
+            print('Need secret answer')
+            self.secret_anwser(anwser_input, user)
 
-                    best_matches = driver.find_elements(
-                        By.CLASS_NAME, self.best_matches_class)
+            if self.is_logged():
+                print('Logged with success!')
+                return self.get_best_matches_jobs()
 
-                    best_matches_jobs: list[Job] = []
+            if self.need_six_digit_code():
+                print('Need six digit code')
+                return []
 
-                    for best_match in best_matches:
-                        best_match_informations = best_match.get_attribute(
-                            'innerText')
-                        job = self.transform_to_job(best_match_informations)
-                        best_matches_jobs.append(job)
+        otp_input = self.need_six_digit_otp_code()
+        if otp_input:
+            print('Need six digit otp')
+            return []
 
-                    return best_matches_jobs
-                except Exception as error:
-                    print('Login error')
-                    print(error)
+        return []
