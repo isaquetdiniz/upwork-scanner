@@ -1,1 +1,382 @@
-{"jobs": [{"title": "Simple Reddit Scraper with Python/BeautifulSoup", "description": "I'd like someone to write a simple reddit scraper that does the following: Task 1 -------- 1. Choose a particular subreddit 2. Sort by \"new\" 3. Scrape all posts on that subreddit by clicking \"next\" as many times as needed to reach the \"beginning\" of the subreddit. Task 2 -------- 1. Start with a list of subreddits. 2. For each subreddit:. - Search for some string in that subreddit. - Scrape all posts on that subreddit matching that string. Code should be written in a Python script using requests/BeautifulSoup. I'd also like you to use the click package. You don't need to scrape comments - just title/URL/submitter username/submission date. Start with a template like this: -------- import requests import BeautifulSoup as bs4 import click import pandas as pd SUBREDDITS_CSV = \"./data/subreddits.csv\" SEARCH_QUERY = \"pillow\" SUBREDDIT_URL=\"old.reddit.com/r/islam\" @click.command() def main(): scrape_subreddit(SUBREDDIT_NAME) search_and_scrape_subreddits(SUBREDDITS_CSV, SEARCH_QUERY) pass def scrape_subreddit(url): # Write code here. def search_and_scrape_subreddits(SUBREDDITS_CSV, SEARCH_QUERY): # Write code here. if __name__ == \"__main__\": main()", "tags": ["Python", "Data Scraping", "pandas", "Python Script"], "level": "Entry level", "payment": "Fixed-price Est. Budget: $60", "client": {"rating": 4.9337495195, "spent": "$10,000", "country": "United States"}}, {"title": "Best Model Determination Project", "description": "Only freelancers located in the United States may apply.", "tags": ["Determine which is the best model that will provide the highest predictive results.", "Data Analysis", "Python", "Researcher"], "level": "Expert", "payment": "Hourly: $65.00 Est. Time: More than 6 months, Less than 30 hrs/week", "client": {"rating": 4.9979095025, "spent": "$10,000", "country": "United States"}}, {"title": "Data analyst", "description": "We are an organization that has been running an ecommerce website since 2003 offering over 3000 audio files for sale. We have our data in a MY SQL file containing such data points as contact information, membership type, lists of classes purchases or listened to for free per user. We would like to 1. Have you present a clear representation of the table structures in the SQL file so we know everything we have available. 2. Preparation of an Excel spreadsheets incorporating contact data, class title, speaker, class id, purchase or free listening, unit amount membership type, and purchase history. 3. Help us create reports with data that will help us identify our top customers for non-profit solicitations.", "tags": ["Data Analysis", "SQL"], "level": "Intermediate", "payment": "Fixed-price Est. Budget: $100", "client": {"rating": 55.0, "spent": "$700", "country": "United States"}}, {"title": "Download Historical Soccer Data from Betfair", "description": "I am based in the US. Access to Betfair is blocked. You would need to create an account on Betfair. And download the following historical data for me. (Soccer only) https://historicdata.betfair.com/#/home 2018 FIFA World Cup Data Pro These datasets isfree. Once you have downloaded them you will provide them to me. BEFORE APPLYING FOR THE JOB PLEASE CHECK IF THE SITE WILL LET YOU CREATE AN ACCOUNT. I CANNOT FROM THE US. I SUSPECT THE SERVICE IS NOT OFFERED IN OTHER COUNTRIES.", "tags": ["Data Extraction", "Data Scraping"], "level": "Entry level", "payment": "Fixed-price Est. Budget: $25", "client": {"rating": 4.8342989575, "spent": "$2,000", "country": "United States"}}, {"title": "Replicate data from Google Cloud storage bucket to Bigquery", "description": "Hello - I have multiple JSON files coming to Google storage bucket . I would like to use Dataprep( by trifacta ) to extract the data from JSON document and update to BigQuery table. Incase you same data/JSON file comes again this should be able to notify and update accordingly", "tags": [], "level": "Intermediate", "payment": "Fixed-price Est. Budget: $50", "client": {"rating": 5.0, "spent": "$40", "country": "United States"}}, {"title": "Test Design Expert", "description": "We have a set of healthcare products for doctors, which include: a. screening tools that doctors can use with their patients; b. decision tools that doctors can use in their OPD to diagnose/ treat their patients better. We have set up a panel of 100 doctors where we can test these products. We are looking for an expert to design experiments to identify the best methods for doctors to adopt these services and the best methods for doctors to use these services.", "tags": ["Conjoint Analysis", "Market Researcher"], "level": "Intermediate", "payment": "Fixed-price Est. Budget: $200", "client": {"rating": 4.8324277145, "spent": "$8,000", "country": "India"}}, {"title": "Sas studio tutor help solve coding error", "description": "Help solve few coding error eg. - Filling missing data - Remove the decimal palace - replace mising data", "tags": ["Data Science", "Machine Learning", "SAS", "Data Analysis"], "level": "Intermediate", "payment": "Hourly: $3.00-$5.00 Est. Time: 1 to 3 months, Less than 30 hrs/week", "client": {"rating": 5.0, "spent": "$30", "country": "Malaysia"}}, {"title": "Deep learning tutor is needed to teach the processing of images and speech data", "description": "Data can be Images, Speech \u2022 Installation of all the needed packages. \u2022 Data uploading \u2022 Data Preprocessing \u2022 Data augmentation \u2022 Model development \u2022 Training and Testing data, Cross-validation \u2022 Figures like ROC, AUC, Confusion Matric, Accuracy, and Loss graphs \u2022 Prediction of certain health-related diseases", "tags": ["PyTorch", "Deep Learning", "Computer Vision", "Machine Learning"], "level": "Intermediate", "payment": "Fixed-price Est. Budget: $50", "client": {"rating": 4.95450715, "spent": "$4,000", "country": "Saudi Arabia"}}, {"title": "Harvard Case Data Analysis and Decision Making", "description": "Analyse and answer the 5 discussion questions on the end of case (page 7) \u2022 Create data analysis dashboard \u2022 Background, key issues, strategic analysis based on data. \u2022 Set up \u2013 conflict \u2013 resolution process using the \u2022 Strategies to resolve the issue / prevent issues in future \u2013 Policy guidance", "tags": ["Data Analysis", "Business Intelligence", "Business Management"], "level": "Entry level", "payment": "Fixed-price Est. Budget: $30", "client": {"rating": 5.0, "spent": "$0", "country": "United Kingdom"}}, {"title": "Pull data from NBA.com into Excel", "description": "I need to pull in data as a Query or Connection into Excel from https://www.nba.com/stats/players/hustle The data needs to be able to be updated when refreshed, and return all rows of data (not just the first page. This needs to be an easily changeable formula/process as I will need to pull other data sets from this site. Thank you!", "tags": ["Skip skills", "Microsoft Excel", "Data Entry", "Data Mining", "Data Scraping", "Spreadsheet Software", "Visual Basic for Applications", "Data Extraction", "Data Analysis"], "level": "Intermediate", "payment": "Fixed-price Est. Budget: $10", "client": {"rating": 55.0, "spent": "$300", "country": "United States"}}, {"title": "AI artist needed. Chat ai, Chat GPT... Avatars and portraits needed", "description": "Hi! I'm looking for someone to generate multiple AI portraits based on famous people. I see the AI Art Selphie trend and I want it done for famous people portraits. I would learn it myself but, I just don't have the time. I am going to add some examples. If can have AI generate some portraits for me. The job is yours. Please add samples of AI art, portraits in particular when you apply. Thanks and good luck!", "tags": ["Artificial Intelligence", "Illustration", "Graphic Design"], "level": "Intermediate", "payment": "Hourly: $10.00-$15.00 Est. Time: 1 to 3 months, Less than 30 hrs/week", "client": {"rating": 4.9214086655, "spent": "$30,000", "country": "United States"}}, {"title": "Pest conrol emails dtabase", "description": "Only freelancers located in the United States may apply.", "tags": ["I need pest control.owners data... email pblhone number and website by state....the whole US.", "Market Research", "Lead Generation"], "level": "Intermediate", "payment": "Fixed-price Est. Budget: $250", "client": {"rating": 4.7345272145, "spent": "$6,000", "country": "United States"}}, {"title": "Get paraphrase sentences from chatgpt", "description": "1. The point of the project is to put sentences into the chatgpt system and record the paraphrases of the original sentence in a database. 2. Sign up to https://chat.openai.com/chat 3. input into the box paraphrase thirty times the following sentence where is the movie theater? 4. Get the responses put them into a separate database table. 5. Repeat for each sentence. Take the sentences from here https://huggingface.co/datasets/allenai/c4/tree/main/en.noblocklist start with the 200th file called c4-train.00200-of-01024.json.gz and continue from there using the sentences. Each file has maybe 7-9 million sentences so we will play it by ear how many we process. 6. you will need many accounts to do this. The accounts are currently free. 7. I will supply proxies if necessary 8. you can also paraphrase more than thirty perhaps forty but there is a character limit the system returns. Try forty and see. 9. The database is layed out as follows. Two database tables. First table contains the original sentences and a unique ID for each. The second table contains the paraphrase sentences, the ID of the original sentence, it's own unique ID and the order it came up like if it was third put 3, if it was twenty ninth put 29. 10. Attached is a file called db filler. You will need the functions in it to process the sentences from https://huggingface.co/datasets/allenai/c4/tree/main/en.noblocklist 11. These sentences don't contain bad words because chatgpt frowns upon processing certain things.", "tags": ["Python", "Selenium"], "level": "Expert", "payment": "Fixed-price Est. Budget: $300", "client": {"rating": 55.0, "spent": "$400", "country": "United States"}}, {"title": "Data extraction", "description": "I have an excel sheet with memberships, I want to find out the following information: 1) how many active members I have in each month, since 2021 (this includes new and old memberships from previous memberships) 2) how many new members have joined in each month", "tags": ["Data Entry", "Microsoft Excel"], "level": "Intermediate", "payment": "Fixed-price Est. Budget: $15", "client": {"rating": 55.0, "spent": "$900", "country": "Saudi Arabia"}}, {"title": "Data Analyst Needed to Analyze Large Data Set", "description": "Hello, We have a large CSV file of 600,000 rows that we'd like to pull key business information from. Columns include purchase date, product ID, product name, price, customer ID, country, and transaction ID. We'd like to pull information such as: - customer LTV - percentage of one-time vs repeat customers - a breakdown of customer types based on purchase data (percentage of customers who only ever make one purchase, two purchases, etc.) - average customer retention period (how long customers stay with us and make purchases) - breakdown of customers by country - days of the week ordered by average sales - breakdown of sales by category - percentage of sales that come from \"power users\" (i.e. is there a segment of users responsible for most of our sales?) - other useful information that a proper data analyst would be able to discover (e.g. most common categories of multi-item purchases, most common price points of repeat customers, etc) If possible, we'd like this data to be analyzed with outliers noted, so that we can account for \"power customers\" as well as the rest of our community. This data will ultimately be used to make decisions that will benefit our community by allowing us to better serve up the products and price points they want to see.", "tags": ["Skip skills", "Data Analysis", "Data Entry", "Data Mining", "Researcher", "Data Scraping", "Microsoft Excel", "Statistics", "Data Visualization"], "level": "Intermediate", "payment": "Hourly: $15.00-$25.00 Est. Time: 3 to 6 months, Less than 30 hrs/week", "client": {"rating": 5.0, "spent": "$0", "country": "United States"}}, {"title": "Web Scraping - Evaluate Customer Interest & Activity Across Retail Websites (V2)", "description": "We are looking for a contractor to conduct a scrape review of retailer websites to evaluate consumer traffic, trends, reviews, and, if possible, purchases. Our expectation will be a summary in excel of the products that had the most consumer interest across the retail websites we provide.", "tags": ["Data Scraping", "Data Mining", "Researcher"], "level": "Intermediate", "payment": "Hourly: $5.00-$15.00 Est. Time: 1 to 3 months, Less than 30 hrs/week", "client": {"rating": 4.9880615595, "spent": "$10,000", "country": "United States"}}, {"title": "Create Custom Google Sheets Financial and Sales KPI Tracking Spreadsheet", "description": "I need assistance building out a custom Google Sheets spreadsheet to track sales, financials and KPIs for my online program business (I have three programs I want to be able to track). People purchase my programs pay in full (12 month program) and payment plan (12 x monthly payments) and I need financial forecasting for this too. I have started with a shell of what I need, but I need this built out a lot more. Things I am struggling with include: - Creating a chart dashboard for visually seeing the key stats, and my progress toward them (also not sure how to create graphs for each 12 month period if I am tracking stats from the start of the business) - How to have MRR included in financial tracking (eg if a client signs up for 12 months and I want to distribute their payments over 12 months of cells to get a picture of future income coming in, how to do that) - Linking the spreadsheets (for example, I want the sales tracking data to populate the sales in the program spreadsheets each time I enter a new one). Etc Here is a sample of what I have started. It's a rough shell. The tabs I need updated are: 1. Dashboard tab: With summary of revenue, expenses (in key categories - marketing, team, operations), broken down by course/program, and ability to add in profit goal and whether on track. 2. Summary tab: With a summary of the key stats from the individual program tabs 3. Programs Tab (multiple but same template) Assistance building out a program tab (which I can use for each program), which pulls in sales from the sales tracking tab, and which allows me to then plot out their 12 months of payments 4. Budget /profit allocations tab: Assistance with changing the final two tabs (projections and budgeting into this new format. 5. Projections tab: I have one in here, want to build this out to include all of my programs, so I can make projections on sales, possible revenue etc. Here's where I am up to, work in progress! https://docs.google.com/spreadsheets/d/1sLTpcunzkv6kvXmVGryIqMS_vV3tgNMIRbT2y1yanJI/edit?usp=sharing Can you help? :) When you reply, please estimate the TOTAL PROJECT BUDGET based on the information you have.", "tags": ["Google Sheets", "Spreadsheet Software"], "level": "Intermediate", "payment": "Hourly: $10.00-$40.00 Est. Time: 1 to 3 months, Less than 30 hrs/week", "client": {"rating": 55.0, "spent": "$500", "country": "Australia"}}, {"title": "Retrieving/Extracting Data from a Submitted Web Form", "description": "Hi. I am wondering if it\u2019s possible to scrape leads from web form submissions (the contact us form) on a website. This will be used for lead generation. I don\u2019t have a specific website to use. I would find websites that match my target audience and try to retrieve the information. We are trying to collect the data submitted through each website. For example, if 5 people submitted the \"contact us\" form today on a website, I want to collect this information from the 5 people. I would like to get the data on demand in the future--so I would request the script--so that I can pull whenever I need it. The best format to display is in Excel/csv, if this is possible.", "tags": ["Ethical Hacking"], "level": "Intermediate", "payment": "Hourly Est. Time: Less than 1 month, not_sure", "client": {"rating": 5.0, "spent": "$0", "country": "United States"}}, {"title": "Scraping data from social media and search engine", "description": "i need personal contact data (Name, email, mobile number) of Pakistani peoples searching for a particular phrase on social media and search engine. i wall use all these for marking", "tags": ["Data Scraping", "Web Scraping", "Data Mining", "Search Engine", "Python", "Lead Generation"], "level": "Expert", "payment": "Hourly Est. Time: Less than 1 month, not_sure", "client": {"rating": 55.0, "spent": "$200", "country": "Pakistan"}}, {"title": "Network Attack Graph generation with MulVal Tool", "description": "I have a network diagram. I want you write \"input.P\" file for MulVal tool to generate Attack Graph. You must have knowledge about MulVal tool.", "tags": ["Network Security", "Cybersecurity Tool"], "level": "Intermediate", "payment": "Hourly Est. Time: Less than 1 month, Less than 30 hrs/week", "client": {"rating": 55.0, "spent": "$20", "country": "India"}}, {"title": "Snowflake", "description": "Hey, I`m Looking for 10-20 one to one class for Snowflake. are you interested in ?", "tags": ["Apache Airflow", "Snowflake", "Python", "NumPy", "pandas", "Data Science"], "level": "Intermediate", "payment": "Hourly Est. Time: Less than 1 month, Less than 30 hrs/week", "client": {"rating": 5.0, "spent": "$0", "country": "India"}}, {"title": "Retail Sales data analytics", "description": "Hello, I own a cannabis business that has all sales data available. I would like to find someone that can analyze the data and tell us when and what happened to make our business slow down. I can see the base data but I would like to know when we were loosing customers, What products that have slowed down and ones that have increased in volume. I would like to have this done monthly. I also have other projects available.", "tags": ["Sales Analytics", "Microsoft Excel", "Data Analysis", "Analytics"], "level": "Intermediate", "payment": "Hourly: $3.00-$15.00 Est. Time: 1 to 3 months, Less than 30 hrs/week", "client": {"rating": 4.4549449735, "spent": "$60,000", "country": "United States"}}, {"title": "Create AB Test Report in Looker", "description": "Hi, I am trying to report the results of an AB Test in Looker. Please see the attachment. I am looking to create (Viz 1) or (Viz 2a+2b). I have created an aggregate based off the raw data that gives me conversion rate (and improvement in conversion). I need help with computing Stat Sig and Confidence Intervals in Looker using the raw/aggregate data. Thanks!", "tags": ["Looker", "SQL"], "level": "Intermediate", "payment": "Hourly Est. Time: Less than 1 month, Less than 30 hrs/week", "client": {"rating": 5.0, "spent": "$0", "country": "India"}}, {"title": "We're looking for someone who has extensive experience in statistics and data analysis", "description": "You will be given the following: A description of the our method in pdf format. A python colab file of statstical tests. Your goal is to: 1) verify that the statistical analysis is valid. 2) provide comments on each cell. 3) write a detailed report showing our hypothesis and discuss why it is accepted or rejected. You must be available online and willing to meet the client. you should have extensive experience in time series models and knowledge of the following tests: Pearson Correlation,PSS, Phillips\u2013Perron, and Augmented Dickey-Fuller, OLS Regression, Cointegration test, Granger Causality Test Academic experience is preferable.", "tags": ["Skip skills", "Data Interpretation", "Statistical Analysis", "Data Analytics", "Data Analysis", "Statistics", "Researcher", "Quantitative Analysis", "Time Series Analysis", "Python", "Data Science"], "level": "Expert", "payment": "Hourly Est. Time: 3 to 6 months, 30+ hrs/week", "client": {"rating": 55.0, "spent": "$2,000", "country": "Saudi Arabia"}}, {"title": "Data Engineer (ETL, NLP)", "description": "We have an exciting Data Engineer consultant role with our healthcare and Human Resources start-up. This is for an ongoing need and we are looking for someone who would eventually lead the data engineering activites of our start-up. The skills we are looking for are related to: - Developing and maintain ETL pipelines - Help with setting them up on AWS - Managing the webscraping activities (using our internal webscraping software) - Help with integrating data with our Salesforce account Desired experience in the fields above:", "tags": ["Data Engineering", "Database Design", "Database Architecture", "ETL Pipeline", "Python", "ETL"], "level": "Expert", "payment": "Hourly: $15.00 Est. Time: More than 6 months, 30+ hrs/week", "client": {"rating": 4.8319488825, "spent": "$2,000", "country": "United Kingdom"}}, {"title": "Data science, Econometrics and Economic Analysis for project on Pharmaceutical Markets in Chile", "description": "Provide assistance on research tasks: i. Constructing novel datasets (often) in collaboration with government and industry partners (combining data that comes from administrative records, self-collected through surveys, and/or generated as the result of a randomized control trial) ii. Data visualization/story-telling iii. Econometric analysis and structural modeling.", "tags": ["Skip skills", "Data Analysis", "Econometrics", "Economics", "Research Papers", "Statistical Analysis", "Machine Learning", "Market Analysis", "Statistics"], "level": "Expert", "payment": "Fixed-price Est. Budget: $10,000", "client": {"rating": 5.0, "spent": "$0", "country": "United States"}}, {"title": "Optimize large GPT type model", "description": "I am looking for a solution that allows for fast, quantized, and accelerated inference using either GPT-J or GPT-Neox, with the primary focus being on quick inference times. The goal is to have this solution ready for deployment", "tags": ["Deep Learning", "Python", "Machine Learning"], "level": "Intermediate", "payment": "Fixed-price Est. Budget: $150", "client": {"rating": 5.0, "spent": "$0", "country": "Macedonia"}}, {"title": "Small Data Analysis Using SQL", "description": "Please read the pdf file attached for job description. You may find the attached zip files for data. You have to analyze the data to come up with two short reports based on insights you gather from the data. This is relatively easy task as you are being provided cleaned data so it is expected that this can be completed within a day or two.", "tags": ["SQL", "Report Writing", "Data Visualization"], "level": "Entry level", "payment": "Hourly: $10.00-$25.00 Est. Time: Less than 1 month, Less than 30 hrs/week", "client": {"rating": 5.0, "spent": "$0", "country": "United Kingdom"}}, {"title": "Analyze an Excel File with 11 columns and 2483 rows", "description": "I have an excel file with a data set containing 11 columns and 2483 rows (they are IT service requests). I want someone to analyze the data and come up with information on what kind of frequently occurring category of requests. I can explain over a call to someone who is ready to take up this work", "tags": ["Microsoft Excel"], "level": "Intermediate", "payment": "Fixed-price Est. Budget: $40", "client": {"rating": 5.0, "spent": "$0", "country": "India"}}, {"title": "Data mining (collection of data)", "description": "its all about analyzing data from a pdf into an organized file data miner apply immediately Jobs: Data Entry, Data Mining, Data Processing, Python, Web Scraping)", "tags": ["Data Mining", "Python", "Data Collection"], "level": "Entry level", "payment": "Fixed-price Est. Budget: $50", "client": {"rating": 5.0, "spent": "$0", "country": "United Kingdom"}}]}
+{
+  "jobs": [
+    {
+      "title": "Simple Reddit Scraper with Python/BeautifulSoup",
+      "description": "I'd like someone to write a simple reddit scraper that does the following: Task 1 -------- 1. Choose a particular subreddit 2. Sort by \"new\" 3. Scrape all posts on that subreddit by clicking \"next\" as many times as needed to reach the \"beginning\" of the subreddit. Task 2 -------- 1. Start with a list of subreddits. 2. For each subreddit:. - Search for some string in that subreddit. - Scrape all posts on that subreddit matching that string. Code should be written in a Python script using requests/BeautifulSoup. I'd also like you to use the click package. You don't need to scrape comments - just title/URL/submitter username/submission date. Start with a template like this: -------- import requests import BeautifulSoup as bs4 import click import pandas as pd SUBREDDITS_CSV = \"./data/subreddits.csv\" SEARCH_QUERY = \"pillow\" SUBREDDIT_URL=\"old.reddit.com/r/islam\" @click.command() def main(): scrape_subreddit(SUBREDDIT_NAME) search_and_scrape_subreddits(SUBREDDITS_CSV, SEARCH_QUERY) pass def scrape_subreddit(url): # Write code here. def search_and_scrape_subreddits(SUBREDDITS_CSV, SEARCH_QUERY): # Write code here. if __name__ == \"__main__\": main()",
+      "tags": ["Python", "Data Scraping", "pandas", "Python Script"],
+      "level": "Entry level",
+      "payment": "Fixed-price Est. Budget: $60",
+      "client": {
+        "rating": 4.9337495195,
+        "spent": "$10,000",
+        "country": "United States"
+      }
+    },
+    {
+      "title": "Data analyst",
+      "description": "We are an organization that has been running an ecommerce website since 2003 offering over 3000 audio files for sale. We have our data in a MY SQL file containing such data points as contact information, membership type, lists of classes purchases or listened to for free per user. We would like to 1. Have you present a clear representation of the table structures in the SQL file so we know everything we have available. 2. Preparation of an Excel spreadsheets incorporating contact data, class title, speaker, class id, purchase or free listening, unit amount membership type, and purchase history. 3. Help us create reports with data that will help us identify our top customers for non-profit solicitations.",
+      "tags": ["Data Analysis", "SQL"],
+      "level": "Intermediate",
+      "payment": "Fixed-price Est. Budget: $100",
+      "client": { "rating": 55.0, "spent": "$700", "country": "United States" }
+    },
+    {
+      "title": "Initial contract",
+      "description": "1. Top ten Auto-rickshaw makers in India. Contact phone numbers (with the view of you calling them to set up a meeting in our Mumbai office). 2. Top ten 2 wheelers for the same process as above 3. Top ten \u2154 were delivery services. 4. Main 3-4 cell phone companies that may have need for a Hydrogen Fuel Cell poser systems to replace diesel generator based power packs. 5. Top ten back up power generator producers in India and their contact numbers.",
+      "tags": [
+        "Implementation",
+        "Microsoft PowerPoint",
+        "Project Analysis",
+        "Client Management"
+      ],
+      "level": "Intermediate",
+      "payment": "Hourly Est. Time: Less than 1 month, Less than 30 hrs/week",
+      "client": { "rating": 5.0, "spent": "$0", "country": "United States" }
+    },
+    {
+      "title": "Download Historical Soccer Data from Betfair",
+      "description": "I am based in the US. Access to Betfair is blocked. You would need to create an account on Betfair. And download the following historical data for me. (Soccer only) https://historicdata.betfair.com/#/home 2018 FIFA World Cup Data Pro These datasets isfree. Once you have downloaded them you will provide them to me. BEFORE APPLYING FOR THE JOB PLEASE CHECK IF THE SITE WILL LET YOU CREATE AN ACCOUNT. I CANNOT FROM THE US. I SUSPECT THE SERVICE IS NOT OFFERED IN OTHER COUNTRIES.",
+      "tags": ["Data Extraction", "Data Scraping"],
+      "level": "Entry level",
+      "payment": "Fixed-price Est. Budget: $25",
+      "client": {
+        "rating": 4.8342989575,
+        "spent": "$2,000",
+        "country": "United States"
+      }
+    },
+    {
+      "title": "Local Projections",
+      "description": "I am looking for an expert in Local Projections method Jorda (2005) by stata ,R or Matlab. You have to have a good knowledge in both the theoretical and applied part",
+      "tags": ["Econometrics", "MATLAB", "Stata"],
+      "level": "Expert",
+      "payment": "Fixed-price Est. Budget: $20",
+      "client": {
+        "rating": 4.9460712545,
+        "spent": "$1,000",
+        "country": "San Marino"
+      }
+    },
+    {
+      "title": "Replicate data from Google Cloud storage bucket to Bigquery",
+      "description": "Hello - I have multiple JSON files coming to Google storage bucket . I would like to use Dataprep( by trifacta ) to extract the data from JSON document and update to BigQuery table. Incase you same data/JSON file comes again this should be able to notify and update accordingly",
+      "tags": [],
+      "level": "Intermediate",
+      "payment": "Fixed-price Est. Budget: $50",
+      "client": { "rating": 5.0, "spent": "$40", "country": "United States" }
+    },
+    {
+      "title": "Test Design Expert",
+      "description": "We have a set of healthcare products for doctors, which include: a. screening tools that doctors can use with their patients; b. decision tools that doctors can use in their OPD to diagnose/ treat their patients better. We have set up a panel of 100 doctors where we can test these products. We are looking for an expert to design experiments to identify the best methods for doctors to adopt these services and the best methods for doctors to use these services.",
+      "tags": ["Conjoint Analysis", "Market Researcher"],
+      "level": "Intermediate",
+      "payment": "Fixed-price Est. Budget: $200",
+      "client": {
+        "rating": 4.8324277145,
+        "spent": "$8,000",
+        "country": "India"
+      }
+    },
+    {
+      "title": "Sas studio tutor help solve coding error",
+      "description": "Help solve few coding error eg. - Filling missing data - Remove the decimal palace - replace mising data",
+      "tags": ["Data Science", "Machine Learning", "SAS", "Data Analysis"],
+      "level": "Intermediate",
+      "payment": "Hourly: $3.00-$5.00 Est. Time: 1 to 3 months, Less than 30 hrs/week",
+      "client": { "rating": 5.0, "spent": "$30", "country": "Malaysia" }
+    },
+    {
+      "title": "Best Model Determination Project",
+      "description": "Only freelancers located in the United States may apply.",
+      "tags": [
+        "Determine which is the best model that will provide the highest predictive results.",
+        "Data Analysis",
+        "Python",
+        "Researcher"
+      ],
+      "level": "Expert",
+      "payment": "Hourly: $65.00 Est. Time: More than 6 months, Less than 30 hrs/week",
+      "client": {
+        "rating": 4.9979095025,
+        "spent": "$10,000",
+        "country": "United States"
+      }
+    },
+    {
+      "title": "Deep learning tutor is needed to teach the processing of images and speech data",
+      "description": "Data can be Images, Speech \u2022 Installation of all the needed packages. \u2022 Data uploading \u2022 Data Preprocessing \u2022 Data augmentation \u2022 Model development \u2022 Training and Testing data, Cross-validation \u2022 Figures like ROC, AUC, Confusion Matric, Accuracy, and Loss graphs \u2022 Prediction of certain health-related diseases",
+      "tags": [
+        "PyTorch",
+        "Deep Learning",
+        "Computer Vision",
+        "Machine Learning"
+      ],
+      "level": "Intermediate",
+      "payment": "Fixed-price Est. Budget: $50",
+      "client": {
+        "rating": 4.95450715,
+        "spent": "$4,000",
+        "country": "Saudi Arabia"
+      }
+    },
+    {
+      "title": "Harvard Case Data Analysis and Decision Making",
+      "description": "Analyse and answer the 5 discussion questions on the end of case (page 7) \u2022 Create data analysis dashboard \u2022 Background, key issues, strategic analysis based on data. \u2022 Set up \u2013 conflict \u2013 resolution process using the \u2022 Strategies to resolve the issue / prevent issues in future \u2013 Policy guidance",
+      "tags": ["Data Analysis", "Business Intelligence", "Business Management"],
+      "level": "Entry level",
+      "payment": "Fixed-price Est. Budget: $30",
+      "client": { "rating": 5.0, "spent": "$0", "country": "United Kingdom" }
+    },
+    {
+      "title": "Pull data from NBA.com into Excel",
+      "description": "I need to pull in data as a Query or Connection into Excel from https://www.nba.com/stats/players/hustle The data needs to be able to be updated when refreshed, and return all rows of data (not just the first page. This needs to be an easily changeable formula/process as I will need to pull other data sets from this site. Thank you!",
+      "tags": [
+        "Skip skills",
+        "Microsoft Excel",
+        "Data Entry",
+        "Data Mining",
+        "Data Scraping",
+        "Spreadsheet Software",
+        "Visual Basic for Applications",
+        "Data Extraction",
+        "Data Analysis"
+      ],
+      "level": "Intermediate",
+      "payment": "Fixed-price Est. Budget: $10",
+      "client": { "rating": 55.0, "spent": "$300", "country": "United States" }
+    },
+    {
+      "title": "AI artist needed. Chat ai, Chat GPT... Avatars and portraits needed",
+      "description": "Hi! I'm looking for someone to generate multiple AI portraits based on famous people. I see the AI Art Selphie trend and I want it done for famous people portraits. I would learn it myself but, I just don't have the time. I am going to add some examples. If can have AI generate some portraits for me. The job is yours. Please add samples of AI art, portraits in particular when you apply. Thanks and good luck!",
+      "tags": ["Artificial Intelligence", "Illustration", "Graphic Design"],
+      "level": "Intermediate",
+      "payment": "Hourly: $10.00-$15.00 Est. Time: 1 to 3 months, Less than 30 hrs/week",
+      "client": {
+        "rating": 4.9214086655,
+        "spent": "$30,000",
+        "country": "United States"
+      }
+    },
+    {
+      "title": "Small Data Analysis Using SQL",
+      "description": "Please read the pdf file attached for job description. You may find the attached zip files for data. You have to analyze the data to come up with two short reports based on insights you gather from the data. This is relatively easy task as you are being provided cleaned data so it is expected that this can be completed within a day or two.",
+      "tags": ["SQL", "Report Writing", "Data Visualization"],
+      "level": "Entry level",
+      "payment": "Hourly: $10.00-$25.00 Est. Time: Less than 1 month, Less than 30 hrs/week",
+      "client": { "rating": 5.0, "spent": "$0", "country": "United Kingdom" }
+    },
+    {
+      "title": "Get paraphrase sentences from chatgpt",
+      "description": "1. The point of the project is to put sentences into the chatgpt system and record the paraphrases of the original sentence in a database. 2. Sign up to https://chat.openai.com/chat 3. input into the box paraphrase thirty times the following sentence where is the movie theater? 4. Get the responses put them into a separate database table. 5. Repeat for each sentence. Take the sentences from here https://huggingface.co/datasets/allenai/c4/tree/main/en.noblocklist start with the 200th file called c4-train.00200-of-01024.json.gz and continue from there using the sentences. Each file has maybe 7-9 million sentences so we will play it by ear how many we process. 6. you will need many accounts to do this. The accounts are currently free. 7. I will supply proxies if necessary 8. you can also paraphrase more than thirty perhaps forty but there is a character limit the system returns. Try forty and see. 9. The database is layed out as follows. Two database tables. First table contains the original sentences and a unique ID for each. The second table contains the paraphrase sentences, the ID of the original sentence, it's own unique ID and the order it came up like if it was third put 3, if it was twenty ninth put 29. 10. Attached is a file called db filler. You will need the functions in it to process the sentences from https://huggingface.co/datasets/allenai/c4/tree/main/en.noblocklist 11. These sentences don't contain bad words because chatgpt frowns upon processing certain things.",
+      "tags": ["Python", "Selenium"],
+      "level": "Expert",
+      "payment": "Fixed-price Est. Budget: $300",
+      "client": { "rating": 55.0, "spent": "$400", "country": "United States" }
+    },
+    {
+      "title": "Pest conrol emails dtabase",
+      "description": "Only freelancers located in the United States may apply.",
+      "tags": [
+        "I need pest control.owners data... email pblhone number and website by state....the whole US.",
+        "Market Research",
+        "Lead Generation"
+      ],
+      "level": "Intermediate",
+      "payment": "Fixed-price Est. Budget: $250",
+      "client": {
+        "rating": 4.7345272145,
+        "spent": "$6,000",
+        "country": "United States"
+      }
+    },
+    {
+      "title": "Data extraction",
+      "description": "I have an excel sheet with memberships, I want to find out the following information: 1) how many active members I have in each month, since 2021 (this includes new and old memberships from previous memberships) 2) how many new members have joined in each month",
+      "tags": ["Data Entry", "Microsoft Excel"],
+      "level": "Intermediate",
+      "payment": "Fixed-price Est. Budget: $15",
+      "client": { "rating": 55.0, "spent": "$900", "country": "Saudi Arabia" }
+    },
+    {
+      "title": "Data Analyst Needed to Analyze Large Data Set",
+      "description": "Hello, We have a large CSV file of 600,000 rows that we'd like to pull key business information from. Columns include purchase date, product ID, product name, price, customer ID, country, and transaction ID. We'd like to pull information such as: - customer LTV - percentage of one-time vs repeat customers - a breakdown of customer types based on purchase data (percentage of customers who only ever make one purchase, two purchases, etc.) - average customer retention period (how long customers stay with us and make purchases) - breakdown of customers by country - days of the week ordered by average sales - breakdown of sales by category - percentage of sales that come from \"power users\" (i.e. is there a segment of users responsible for most of our sales?) - other useful information that a proper data analyst would be able to discover (e.g. most common categories of multi-item purchases, most common price points of repeat customers, etc) If possible, we'd like this data to be analyzed with outliers noted, so that we can account for \"power customers\" as well as the rest of our community. This data will ultimately be used to make decisions that will benefit our community by allowing us to better serve up the products and price points they want to see.",
+      "tags": [
+        "Skip skills",
+        "Data Analysis",
+        "Data Entry",
+        "Data Mining",
+        "Researcher",
+        "Data Scraping",
+        "Microsoft Excel",
+        "Statistics",
+        "Data Visualization"
+      ],
+      "level": "Intermediate",
+      "payment": "Hourly: $15.00-$25.00 Est. Time: 3 to 6 months, Less than 30 hrs/week",
+      "client": { "rating": 5.0, "spent": "$0", "country": "United States" }
+    },
+    {
+      "title": "Web Scraping - Evaluate Customer Interest & Activity Across Retail Websites (V2)",
+      "description": "We are looking for a contractor to conduct a scrape review of retailer websites to evaluate consumer traffic, trends, reviews, and, if possible, purchases. Our expectation will be a summary in excel of the products that had the most consumer interest across the retail websites we provide.",
+      "tags": ["Data Scraping", "Data Mining", "Researcher"],
+      "level": "Intermediate",
+      "payment": "Hourly: $5.00-$15.00 Est. Time: 1 to 3 months, Less than 30 hrs/week",
+      "client": {
+        "rating": 4.9880615595,
+        "spent": "$10,000",
+        "country": "United States"
+      }
+    },
+    {
+      "title": "NLP Expert needed!",
+      "description": "we need somebody to guide and help us to extract needed skills out of german job descriptions. We want to extract skills out of Job descriptions in large scale and store them in our db. you'll get a ton of JDs in HTML-Format and we need you to find the best model and give us the code. if you're interested, please answer the following questions: - did you do a similiar project? if yes, please describe the project, the goal, your contribution - what is your approach? - what tech stack would you use? Best, G.",
+      "tags": [
+        "Data Extraction",
+        "Natural Language Processing",
+        "Python",
+        "Machine Learning",
+        "Data Science",
+        "Artificial Intelligence"
+      ],
+      "level": "Intermediate",
+      "payment": "Fixed-price Est. Budget: $200",
+      "client": { "rating": 5.0, "spent": "$0", "country": "Germany" }
+    },
+    {
+      "title": "Retrieving/Extracting Data from a Submitted Web Form",
+      "description": "Hi. I am wondering if it\u2019s possible to scrape leads from web form submissions (the contact us form) on a website. This will be used for lead generation. I don\u2019t have a specific website to use. I would find websites that match my target audience and try to retrieve the information. We are trying to collect the data submitted through each website. For example, if 5 people submitted the \"contact us\" form today on a website, I want to collect this information from the 5 people. I would like to get the data on demand in the future--so I would request the script--so that I can pull whenever I need it. The best format to display is in Excel/csv, if this is possible.",
+      "tags": ["Ethical Hacking"],
+      "level": "Intermediate",
+      "payment": "Hourly Est. Time: Less than 1 month, not_sure",
+      "client": { "rating": 5.0, "spent": "$0", "country": "United States" }
+    },
+    {
+      "title": "Create Custom Google Sheets Financial and Sales KPI Tracking Spreadsheet",
+      "description": "I need assistance building out a custom Google Sheets spreadsheet to track sales, financials and KPIs for my online program business (I have three programs I want to be able to track). People purchase my programs pay in full (12 month program) and payment plan (12 x monthly payments) and I need financial forecasting for this too. I have started with a shell of what I need, but I need this built out a lot more. Things I am struggling with include: - Creating a chart dashboard for visually seeing the key stats, and my progress toward them (also not sure how to create graphs for each 12 month period if I am tracking stats from the start of the business) - How to have MRR included in financial tracking (eg if a client signs up for 12 months and I want to distribute their payments over 12 months of cells to get a picture of future income coming in, how to do that) - Linking the spreadsheets (for example, I want the sales tracking data to populate the sales in the program spreadsheets each time I enter a new one). Etc Here is a sample of what I have started. It's a rough shell. The tabs I need updated are: 1. Dashboard tab: With summary of revenue, expenses (in key categories - marketing, team, operations), broken down by course/program, and ability to add in profit goal and whether on track. 2. Summary tab: With a summary of the key stats from the individual program tabs 3. Programs Tab (multiple but same template) Assistance building out a program tab (which I can use for each program), which pulls in sales from the sales tracking tab, and which allows me to then plot out their 12 months of payments 4. Budget /profit allocations tab: Assistance with changing the final two tabs (projections and budgeting into this new format. 5. Projections tab: I have one in here, want to build this out to include all of my programs, so I can make projections on sales, possible revenue etc. Here's where I am up to, work in progress! https://docs.google.com/spreadsheets/d/1sLTpcunzkv6kvXmVGryIqMS_vV3tgNMIRbT2y1yanJI/edit?usp=sharing Can you help? :) When you reply, please estimate the TOTAL PROJECT BUDGET based on the information you have.",
+      "tags": ["Google Sheets", "Spreadsheet Software"],
+      "level": "Intermediate",
+      "payment": "Hourly: $10.00-$40.00 Est. Time: 1 to 3 months, Less than 30 hrs/week",
+      "client": { "rating": 55.0, "spent": "$500", "country": "Australia" }
+    },
+    {
+      "title": "Network Attack Graph generation with MulVal Tool",
+      "description": "I have a network diagram. I want you write \"input.P\" file for MulVal tool to generate Attack Graph. You must have knowledge about MulVal tool.",
+      "tags": ["Network Security", "Cybersecurity Tool"],
+      "level": "Intermediate",
+      "payment": "Hourly Est. Time: Less than 1 month, Less than 30 hrs/week",
+      "client": { "rating": 55.0, "spent": "$20", "country": "India" }
+    },
+    {
+      "title": "Scraping data from social media and search engine",
+      "description": "i need personal contact data (Name, email, mobile number) of Pakistani peoples searching for a particular phrase on social media and search engine. i wall use all these for marking",
+      "tags": [
+        "Data Scraping",
+        "Web Scraping",
+        "Data Mining",
+        "Search Engine",
+        "Python",
+        "Lead Generation"
+      ],
+      "level": "Expert",
+      "payment": "Hourly Est. Time: Less than 1 month, not_sure",
+      "client": { "rating": 55.0, "spent": "$200", "country": "Pakistan" }
+    },
+    {
+      "title": "Snowflake",
+      "description": "Hey, I`m Looking for 10-20 one to one class for Snowflake. are you interested in ?",
+      "tags": [
+        "Apache Airflow",
+        "Snowflake",
+        "Python",
+        "NumPy",
+        "pandas",
+        "Data Science"
+      ],
+      "level": "Intermediate",
+      "payment": "Hourly Est. Time: Less than 1 month, Less than 30 hrs/week",
+      "client": { "rating": 5.0, "spent": "$0", "country": "India" }
+    },
+    {
+      "title": "Create AB Test Report in Looker",
+      "description": "Hi, I am trying to report the results of an AB Test in Looker. Please see the attachment. I am looking to create (Viz 1) or (Viz 2a+2b). I have created an aggregate based off the raw data that gives me conversion rate (and improvement in conversion). I need help with computing Stat Sig and Confidence Intervals in Looker using the raw/aggregate data. Thanks!",
+      "tags": ["Looker", "SQL"],
+      "level": "Intermediate",
+      "payment": "Hourly Est. Time: Less than 1 month, Less than 30 hrs/week",
+      "client": { "rating": 5.0, "spent": "$0", "country": "India" }
+    },
+    {
+      "title": "Retail Sales data analytics",
+      "description": "Hello, I own a cannabis business that has all sales data available. I would like to find someone that can analyze the data and tell us when and what happened to make our business slow down. I can see the base data but I would like to know when we were loosing customers, What products that have slowed down and ones that have increased in volume. I would like to have this done monthly. I also have other projects available.",
+      "tags": [
+        "Sales Analytics",
+        "Microsoft Excel",
+        "Data Analysis",
+        "Analytics"
+      ],
+      "level": "Intermediate",
+      "payment": "Hourly: $3.00-$15.00 Est. Time: 1 to 3 months, Less than 30 hrs/week",
+      "client": {
+        "rating": 4.4549449735,
+        "spent": "$60,000",
+        "country": "United States"
+      }
+    },
+    {
+      "title": "Data Engineer (ETL, NLP)",
+      "description": "We have an exciting Data Engineer consultant role with our healthcare and Human Resources start-up. This is for an ongoing need and we are looking for someone who would eventually lead the data engineering activites of our start-up. The skills we are looking for are related to: - Developing and maintain ETL pipelines - Help with setting them up on AWS - Managing the webscraping activities (using our internal webscraping software) - Help with integrating data with our Salesforce account Desired experience in the fields above:",
+      "tags": [
+        "Data Engineering",
+        "Database Design",
+        "Database Architecture",
+        "ETL Pipeline",
+        "Python",
+        "ETL"
+      ],
+      "level": "Expert",
+      "payment": "Hourly: $15.00 Est. Time: More than 6 months, 30+ hrs/week",
+      "client": {
+        "rating": 4.8319488825,
+        "spent": "$2,000",
+        "country": "United Kingdom"
+      }
+    },
+    {
+      "title": "We're looking for someone who has extensive experience in statistics and data analysis",
+      "description": "You will be given the following: A description of the our method in pdf format. A python colab file of statstical tests. Your goal is to: 1) verify that the statistical analysis is valid. 2) provide comments on each cell. 3) write a detailed report showing our hypothesis and discuss why it is accepted or rejected. You must be available online and willing to meet the client. you should have extensive experience in time series models and knowledge of the following tests: Pearson Correlation,PSS, Phillips\u2013Perron, and Augmented Dickey-Fuller, OLS Regression, Cointegration test, Granger Causality Test Academic experience is preferable.",
+      "tags": [
+        "Skip skills",
+        "Data Interpretation",
+        "Statistical Analysis",
+        "Data Analytics",
+        "Data Analysis",
+        "Statistics",
+        "Researcher",
+        "Quantitative Analysis",
+        "Time Series Analysis",
+        "Python",
+        "Data Science"
+      ],
+      "level": "Expert",
+      "payment": "Hourly Est. Time: 3 to 6 months, 30+ hrs/week",
+      "client": { "rating": 55.0, "spent": "$2,000", "country": "Saudi Arabia" }
+    },
+    {
+      "title": "Data science, Econometrics and Economic Analysis for project on Pharmaceutical Markets in Chile",
+      "description": "Provide assistance on research tasks: i. Constructing novel datasets (often) in collaboration with government and industry partners (combining data that comes from administrative records, self-collected through surveys, and/or generated as the result of a randomized control trial) ii. Data visualization/story-telling iii. Econometric analysis and structural modeling.",
+      "tags": [
+        "Skip skills",
+        "Data Analysis",
+        "Econometrics",
+        "Economics",
+        "Research Papers",
+        "Statistical Analysis",
+        "Machine Learning",
+        "Market Analysis",
+        "Statistics"
+      ],
+      "level": "Expert",
+      "payment": "Fixed-price Est. Budget: $10,000",
+      "client": { "rating": 5.0, "spent": "$0", "country": "United States" }
+    }
+  ]
+}

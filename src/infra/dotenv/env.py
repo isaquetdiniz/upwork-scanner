@@ -86,6 +86,34 @@ class Env:
             'WAIT_ELEMENT_SECONDS': {
                 'new_name': 'wait_element_seconds',
                 'default': 3
+            },
+            'PROFILE_MODAL_CLOSE_BUTTON_CLASS': {
+                'new_name': 'profile_modal_close_button_class',
+                'default': 'up-btn-reset.up-modal-close'
+            },
+            'PROFILE_SETTINGS_TEXT': {
+                'new_name': 'profile_settings_text',
+                'default': 'Settings'
+            },
+            'PROFILE_ANWSER_INPUT': {
+                'new_name': 'profile_anwser_input',
+                'default': 'deviceAuth_answer'
+            },
+            'PROFILE_ANWSER_BUTTON': {
+                'new_name': 'profile_anwser_button',
+                'default': 'up-btn.mr-0.up-btn-primary'
+            },
+            'PROFILE_URL': {
+                'new_name': 'profile_url',
+                'default': "https://www.upwork.com/freelancers/settings/contactInfo"
+            },
+            'PROFILE_INFORMATIONS_CLASS': {
+                'new_name': 'profile_informations_class',
+                'default': "pb-20"
+            },
+            'PROFILE_IMAGE_PARTIAL_LINK': {
+                'new_name': 'profile_image_partial_link',
+                'default': "https://www.upwork.com/profile-portraits"
             }
         }
 
